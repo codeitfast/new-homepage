@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'test';
+  src: url('./test.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'righteous';
+  src: url('./Righteous-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'croissant';
+  src: url('./CroissantOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'megrim';
+  src: url('./Megrim-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'null';
+  src: url('./Null-Normal.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'age';
+  src: url('./Age-Normal.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  text-align: center;
+  position: absolute;
+}
+
+h1{
+  position: absolute;
+  font-family: 'age';
+}
+
+.newInvert{
+  z-index: 2; 
+  background-color: rgba(0,0,0,.01);
+  backdrop-filter: invert(100%);
+  -webkit-transition: width 200ms ease-out, height 200ms ease-out, transform 200ms linear;;
+}
+
+#hoverable:hover .newInvert{
+  -webkit-transition: width 2000ms ease-out, height 200ms ease-out, transform 1000ms linear;;
+}
