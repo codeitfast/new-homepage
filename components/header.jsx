@@ -9,7 +9,7 @@ export default function Header(){
     const { scrollYProgress } = useScroll();
     const n = useTransform(scrollYProgress,
         [0, .6],
-        [1, 11],
+        [-1, 11],
         {ease: cubicBezier(.65,0,.39,.95)});
   
     const scale = useSpring(n)
