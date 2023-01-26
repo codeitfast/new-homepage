@@ -69,3 +69,7 @@ h1{
 #hoverable:hover .newInvert{
   -webkit-transition: width 2000ms ease-out, height 200ms ease-out, transform 1000ms linear;;
 }
+
+.cntr{
+  transform-origin: center;
+}
