@@ -73,3 +73,50 @@ h1{
 .cntr{
   transform-origin: center;
 }
+
+.card-holder{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(52px,1fr));
+  align-content: start;
+  gap: 1rem;
+}
+
+.project-holder{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(384px,384px));
+  align-content: start;
+  gap: 1rem;
+}
+
+.large-card-holder{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
+  align-content: start;
+  gap: 1rem;
+}
+
+.blue{
+  color: #4A5EBE;
+}
+
+a{
+  text-decoration: none;
+}
+
+.svg{
+  -webkit-transition: color 200ms linear;
+}
+.svg:hover{
+  color: white;
+}
+
+.hover-grow{
+  filter: grayscale(.6);
+  -webkit-transition: all 200ms ease-out;
+}
+
+.hoverable:hover .hover-grow{
+  transform: scale(125%);
+  filter:grayscale(0);
+  -webkit-transition: all 200ms ease-out;
+}

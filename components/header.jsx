@@ -9,7 +9,7 @@ export default function Header(){
     const { scrollYProgress } = useScroll();
     const n = useTransform(scrollYProgress,
         [0, .6],
-        [-1, 11],
+        [0, 11],
         {ease: cubicBezier(.65,0,.39,.95)});
   
     const scale = useSpring(n)
@@ -61,31 +61,12 @@ export default function Header(){
         setStar(largeObj)
     }, [scale])
 
-    //still doesn't work :(
-    /*
-    useEffect(() => {
-        let largeObj = JSON.parse(JSON.stringify(star))
-        console.log(largeObj)
-        largeObj.map((singularStar) => {
-          singularStar.x = singularStar.absX
-          singularStar.y = singularStar.absY
-        })
-        setTimeout(() => { 
-          setStar(largeObj)
-        }, 0)
-      }, [n])
-    */
-    
-    /*let stars = []
-    for(let i = 0; i < 200; i++){
-        stars.push([(Math.random()-.5)*1000, (Math.random()-.5)*1000])
-    }*/
-
     //todo: make div on outside of this, then make the objects sticky ¯\_(ツ)_/¯
     return(
         <motion.div className="flex w-screen h-screen place-content-center justify-center items-center sticky">
         <motion.h1 className="absolute place-self-center text-7xl" style={{textSizeAdjust: '100%'}}>I'm codeitfast.</motion.h1>
-        <Link to="1" smooth={true} duration={2000}  className='absolute mt-80 sm:mt-80 text-5xl cursor-pointer'><BsArrowDownSquareFill /></Link>
+        <img src="https://media.tenor.com/y2JXkY1pXkwAAAAC/cat-computer.gif" className="absolute mt-80 w-64 h-auto invert" />
+
         {star.map((s)=>{
            
             let nScale = scale * 1
@@ -93,8 +74,8 @@ export default function Header(){
             className="text-5xl fixed cntr"
             key={s.id}
             animate={{
-                x: s.x,
-                y: s.y,
+                x: s.x * 1,
+                y: s.y * 1,
                 fontSize: s.scale,
                 rotationZ: s.rotation
             }}
@@ -110,9 +91,10 @@ export default function Header(){
             
         })}
         <motion.div id="circle" className="newInvert w-64 h-64 rounded-full fixed"
-        style={{
-            scale
+        animate={{
+            scale: 12
         }}
+        transition={{ease: 'easeIn', duration: .5}}
         ></motion.div>
         </motion.div>
     )
@@ -145,3 +127,5 @@ useEffect(() => {
 }, []); // Empty array ensures that effect is only run on mount
 return windowSize;
 }
+
+//        <Link to="1" smooth={true} duration={2000}  className='absolute mt-80 sm:mt-80 text-5xl cursor-pointer'><BsArrowDownSquareFill /></Link>

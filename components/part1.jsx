@@ -1,15 +1,34 @@
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
+import { TbBrandNextjs, TbBrandJavascript, TbBrandHtml5, TbBrandCss3, TbBrandPython, TbBrandReactNative } from 'react-icons/tb'
+import { SiSocketdotio, SiJavascript, SiReact, SiNextdotjs, SiHtml5, SiCss3, SiJson, SiPython, SiUnity, SiFlask, SiTensorflow, SiTailwindcss } from 'react-icons/si'
 
 export default function PartOne(){
+    const logos = [<SiSocketdotio className="inline-block grow cursor-pointer svg"/>, <SiReact className="inline-block grow cursor-pointer svg"/>, <SiNextdotjs className="inline-block grow cursor-pointer svg"/>, <SiJavascript className="inline-block grow cursor-pointer svg"/>, <SiHtml5 className="inline-block grow cursor-pointer svg"/>, <SiCss3 className="inline-block grow cursor-pointer svg"/>, <SiJson className="inline-block grow cursor-pointer svg"/>, <SiPython className="inline-block grow cursor-pointer svg"/>, <SiUnity className="inline-block grow cursor-pointer svg"/>, <SiFlask className="inline-block grow cursor-pointer svg"/>, <SiTensorflow className="inline-block grow cursor-pointer svg" />, <SiTailwindcss className="inline-block grow cursor-pointer svg" />]
     return(
-        <div id="1" className="flex w-screen h-screen place-content-center justify-center items-center sticky overflow-hidden text-white">
-
-        <h1 className="place-self-center text-7xl" style={{textSizeAdjust: '100%'}}>I code.</h1>
-        <div className="flex w-10/12 max-w-lg justify-between text-left mx-auto">
+        <div id="1" className="flex h-screen place-content-center justify-center items-center text-black overflow-hidden w-screen">
+        <div className="large-card-holder w-11/12 mx-auto max-w-lg my-auto align-middle justify-center items-center place-content-center text-lg text-left backdrop-blur-sm bg-slate-700/25 rounded-2xl py-6 px-28">
         
-            <p className="w-fit px-0 mx-auto text-left">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p className="w-fit px-0 mx-auto text-left">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            <div className="blue font-bold max-w-lg mx-auto px-6"><span className="text-white">My (coding) name is codeitfast. As my name implies, I code.</span> I have been programming for several years, and I have used dozens of programming languages, such as Python, and JavaScript to the ocassional C#. I have many projects on <a href="https://replit.com/@codeitfast?tabs=repls" target="_blank" className="text-white">replit</a> and  <a href="https://github.com/codeitfast" target="_blank" className="text-white">GitHub.</a> Feel free to check them out, and feel free to <a href="mailto: codeitfast434@gmail.com" className="text-white">contact me!</a></div>
+            <div className="blue font-bold card-holder text-5xl w-full mx-auto max-w-lg px-6">
+                {logos.map(logo =>{
+                    return(logo)
+                })}
+            </div>
         </div>
         </div>
     )
 }
+
+/*
+
+<div className="blue font-bold inline z-30">
+                <img src="https://insidehpc.com/wp-content/uploads/2016/01/Python-logo-notext.svg_.png" className="w-16 h-auto"/>
+                <img src="https://th.bing.com/th/id/R.e20a376f7dec3a97e1cab5b889b438fc?rik=tDY7bewhJh7yww&pid=ImgRaw&r=0" className="w-16 h-auto" />
+                <img src="https://th.bing.com/th/id/R.f81a6f373c244b1f70f4b7402b5ab372?rik=XpEbNeP6w1h6AQ&pid=ImgRaw&r=0" className="w-16 h-auto" />
+                <img src="https://th.bing.com/th/id/R.c9421be52fe48fdf04839b53f8e9f1d4?rik=mXxNLfvtnGtNEA&pid=ImgRaw&r=0" className="w-16 h-auto" />
+                <img src="https://th.bing.com/th/id/R.6c8f0a0e377cfa70efcd35ff52893b17?rik=iqhl8JD0f9LLpA&pid=ImgRaw&r=0" className='w-16 h-auto' />
+                <img src="https://pagepro.co/blog/wp-content/uploads/2020/09/image-5.png" className="w-16 h-auto" />
+
+            </div>
+
+*/
