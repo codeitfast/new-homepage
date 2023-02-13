@@ -1,10 +1,10 @@
-a {
+.special-link {
 text-decoration: none;
 display: inline-block;
 position: relative;
 color: white;
 }
-a:after {    
+.special-link:after {    
 background: none repeat scroll 0 0 transparent;
 bottom: 0;
 content: "";
@@ -17,7 +17,7 @@ transition: width 0.3s ease 0s, left 0.3s ease 0s, height 0.3s ease 0s;
 width: 0px;
 border-radius: 5px;
 }
-a:hover:after { 
+.special-link:hover:after { 
 width: 100%;
 left: 0;
 }

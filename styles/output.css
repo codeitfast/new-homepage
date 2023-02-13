@@ -1941,6 +1941,10 @@ html {
   z-index: 30;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -1957,14 +1961,6 @@ html {
 
 .mt-80 {
   margin-top: 20rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
 }
 
 .mb-96 {
@@ -2003,6 +1999,10 @@ html {
   height: 16rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -2011,12 +2011,8 @@ html {
   width: 16rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-full {
@@ -2027,16 +2023,12 @@ html {
   width: 4rem;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
 }
 
 .grow {
@@ -2090,6 +2082,10 @@ html {
 
 .bg-slate-700\/25 {
   background-color: rgb(51 65 85 / 0.25);
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .py-6 {
@@ -2269,7 +2265,7 @@ h1{
 
 .project-holder{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(384px,384px));
+  grid-template-columns: repeat(auto-fit, minmax(352px,384px));
   align-content: start;
   gap: 1rem;
 }

@@ -83,7 +83,7 @@ h1{
 
 .project-holder{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(384px,384px));
+  grid-template-columns: repeat(auto-fit, minmax(352px,384px));
   align-content: start;
   gap: 1rem;
 }

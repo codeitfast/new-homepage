@@ -87,7 +87,7 @@ export default function Header(){
                 rotationZ: scale
             }}
             ><AiFillStar style={{rotateZ: s.rotation, rotateZ: scale,
-                scale: scale, opacity: scale, color: '#4A5EBE'}}/></motion.text>)
+                scale: scale, opacity: scale, color: '#4A5EBE'}} className="z-0"/></motion.text>)
             
         })}
         <motion.div id="circle" className="newInvert w-64 h-64 rounded-full fixed"
