@@ -65,7 +65,7 @@ export default function Header(){
     return(
         <motion.div className="flex w-screen h-screen place-content-center justify-center items-center sticky">
         <motion.h1 className="absolute place-self-center text-7xl" style={{textSizeAdjust: '100%'}}>I'm codeitfast.</motion.h1>
-        <img src="https://media.tenor.com/y2JXkY1pXkwAAAAC/cat-computer.gif" className="absolute mt-80 w-64 h-auto invert" />
+        <img src="https://media.tenor.com/y2JXkY1pXkwAAAAC/cat-computer.gif" className="absolute mt-80 w-64 h-auto invert -z-10 rounded-2xl" />
 
         {star.map((s)=>{
            
