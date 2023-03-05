@@ -1,7 +1,7 @@
-import { BsArrowDownSquareFill } from 'react-icons/bs'
+//import { BsArrowDownSquareFill } from 'react-icons/bs'
 import { AiFillStar } from 'react-icons/ai'
 import { motion, useScroll, useTransform, cubicBezier, useSpring } from "framer-motion";
-import { Link } from 'react-scroll';
+//import { Link } from 'react-scroll';
 import { useEffect, useState } from 'react';
 
 export default function Header(){
@@ -62,6 +62,7 @@ export default function Header(){
     }, [scale])
 
     //todo: make div on outside of this, then make the objects sticky ¯\_(ツ)_/¯
+    //todo: make gif a video instead? or a still image? Or get rid of it? It's sorta laggy...
     return(
         <motion.div className="flex w-screen h-screen place-content-center justify-center items-center sticky">
         <motion.h1 className="absolute place-self-center text-7xl" style={{textSizeAdjust: '100%'}}>I'm codeitfast.</motion.h1>

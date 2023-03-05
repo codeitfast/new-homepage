@@ -8,7 +8,10 @@ export default function PartOne(){
         <div id="1" className="flex h-screen place-content-center justify-center items-center text-black overflow-hidden w-screen">
         <div className="large-card-holder w-11/12 mx-auto max-w-lg my-auto align-middle justify-center items-center place-content-center text-lg text-left backdrop-blur-sm bg-slate-700/25 rounded-2xl py-6 px-28">
         
-            <div className="blue font-bold max-w-lg mx-auto px-6"><span className="text-white">My (coding) name is codeitfast. As my name implies, I code.</span> I have been programming for several years, and I have used dozens of programming languages, such as Python, and JavaScript to the ocassional C#. I have many projects on <a href="https://replit.com/@codeitfast?tabs=repls" target="_blank" className="text-white special-link">Replit</a> and  <a href="https://github.com/codeitfast" target="_blank" className="text-white special-link">GitHub.</a> Feel free to check them out, and feel free to <a href="mailto: codeitfast434@gmail.com" className="text-white special-link">contact me!</a></div>
+
+            <div className="blue font-bold max-w-lg mx-auto px-6"><span className="text-white">👋Hi! I'm codeitfast! As my name <i>implies</i>, I program.</span> I enjoy frontend and anything 3d, but I also have worked with ML and client-sided servers. I also play chess, the piano, and I bike.<br/><br/>
+            <span>My primary languages are JS (and JSX), Python, HTML, and CSS. I'm experienced with using APIs, and I have been using React and Next.js for a while (this website is in Next.js).</span><br/><br/>
+            I have many projects on <a href="https://replit.com/@codeitfast?tabs=repls" target="_blank" className="text-white special-link">Replit</a> and  <a href="https://github.com/codeitfast" target="_blank" className="text-white special-link">GitHub.</a> Feel free to check them out and <a href="mailto: codeitfast434@gmail.com" className="text-white special-link">contact me!</a></div>
             <div className="blue font-bold card-holder text-5xl w-full mx-auto max-w-lg px-6">
                 {logos.map(logo =>{
                     return(logo)
